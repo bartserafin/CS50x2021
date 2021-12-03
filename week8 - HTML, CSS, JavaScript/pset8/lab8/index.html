@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+
+            // Once DOM loaded, listen for click, do function ()
+            document.addEventListener("DOMContentLoaded", function (){
+
+            // MULTIPULE CHOICE QUESTION
+
+                // if correct button clikced
+                let correct_button = document.querySelector("#correct");
+
+                // if incorrect button clicked
+                let incorrect_buttons = document.querySelectorAll(".incorrect");
+
+                // display a message after a button is cliked
+                let message = document.querySelector("#message");
+
+                // Handle the event click on correct button
+                correct_button.addEventListener("click", function (){
+                    correct_button.style.backgroundColor = "green";
+                    message.innerHTML = "Correct!";
+                })
+
+                // Handle the event click on incorrect buttons (there are 3 incorrect buttons)
+                for (let i = 0; i < incorrect_buttons.length; i++){
+                    incorrect_buttons[i].addEventListener("click", function(){
+                        incorrect_buttons[i].style.backgroundColor = "red";
+                        message.innerHTML = "Incorrect!";
+                    })
+                }
+
+            // FREE RESPONSE QUESTION
+
+                document.querySelector("#free_button").addEventListener("click", function(){
+
+                    // Compare the user input with the correct answer
+                    let input = document.querySelector("input");
+
+                    if (input.value == "10")
+                    {
+                        input.style.backgroundColor = "green";
+                        free_response_message.innerHTML = "Correct!";
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = "red";
+                        free_response_message.innerHTML = "Incorrect!";
+                    }
+                })
+
+            });
+
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+                <!-- TODO: Add multipule choice response question here -->
+
+                <h3>Roland-Garros is a tennis compettion taking place in which country?</h3>
+
+                <button class="incorrect">Italy</button>
+                <button id="correct">France</button>
+                <button class="incorrect">Spain</button>
+                <button class="incorrect">UK</button>
+
+                <p id="message"></p>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+
+                <h3>How many legs does a lobster have?</h3>
+
+                <input type="text">
+                <button id="free_button">Check Answer</button>
+
+                <p id="free_response_message"></p>
+
+            </div>
+
+        </div>
+    </body>
+</html>

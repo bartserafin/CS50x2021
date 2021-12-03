@@ -1,0 +1,15 @@
+## Making an index is where we move from O(n) complexity
+## Index is a clue to the databse to load the data more efficiently in a log(n) complexity
+
+## It is a data structure that is builed inside your memory that looks like a B-trees, binary search trees
+    ## It doenst store data in a list anymore, or from top to bottom, it stores data in binary trees
+
+## .timer ON
+## Compare the real time of
+    ## Before creating an index
+    ## SELECT * FROM shows WHERE title = "The Office";
+    ## to after creating an index
+    ## SELECT * FROM shows WHERE title = "The Office";
+
+## Create index within the IMDb
+    CREATE INDEX title_index ON shows (title);

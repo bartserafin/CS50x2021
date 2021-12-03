@@ -1,0 +1,15 @@
+## Check what tables are inside
+    .schema
+    ## Also see MAP3.png
+    
+## Check all shows
+    SELECT * FROM shows;
+    
+## Count all shows
+    SELECT COUNT(*) FROM shows;
+    
+## Count all people
+    SELECT COUNT(*) FROM people;
+    
+## Are there any versions of the same series like "The Office" ?
+    SELECT * FROM shows WHERE title = "The Office";

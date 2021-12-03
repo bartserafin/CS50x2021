@@ -1,0 +1,13 @@
+Flask frame work documentation setup
+
+application.py
+requirements.txt
+static/
+templates/
+
+
+MVC - Model, View, Controller
+
+Controller - Python Code
+View - user interface, html, css
+Model - service, technique - for data, for example sql, .csv etc.

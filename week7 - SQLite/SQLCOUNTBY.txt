@@ -1,0 +1,15 @@
+# find the most popular show using SQL
+
+    sqlite> SELECT UPPER(title), COUNT(title) FROM shows
+
+    sqlite> SELECT UPPER(title), COUNT(title) FROM shows GROUP BY UPPER(title);
+
+    sqlite> SELECT UPPER(title), COUNT(title) FROM shows GROUP BY UPPER(title) ORDER BY COUNT(title);
+
+    sqlite> SELECT UPPER(title), COUNT(title) FROM shows GROUP BY UPPER(title) ORDER BY COUNT(title) DESC;
+
+    sqlite> SELECT UPPER(title), COUNT(title) FROM shows GROUP BY UPPER(title) ORDER BY COUNT(title) DESC LIMIT 10;
+
+     SELECT UPPER(TRIM(title)), COUNT(title) FROM shows GROUP BY UPPER(title) ORDER by COUNT(title) DESC LIMIT 10;
+
+     sqlite> SELECT UPPER(TRIM(title)), COUNT(title) FROM shows GROUP BY UPPER(title) ORDER by COUNT(TRIM(title)) DESC LIMIT 10;

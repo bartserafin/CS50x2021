@@ -1,0 +1,7 @@
+## Deleting an entry
+
+    DELETE FROM shows WHERE title LIKE "Friends";
+
+    ## check if deleted
+
+    SELECT COUNT(title) FROM shows WHERE title LIKE "Friends"

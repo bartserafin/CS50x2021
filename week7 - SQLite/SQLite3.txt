@@ -1,0 +1,55 @@
+.help - for hints
+
+
+# 4 fundamental operations in SQL: / in sqlite3:
+    1. Create / CREATE, INSERT
+    2. Read / SELECT
+    3. Update / UPDATE
+    4. Delete / DELETE
+
+
+# to import a .csv file
+.mode csv
+.import FILE_NAME TABLE_NAME
+
+    sqlite> .import "Favorite TV Shows - Form Responses 1.csv" shows
+
+# shows the result of .import
+.schema
+
+
+CREATE TABLE table_name (column_name type, ...);
+
+SELECT columns_names FROM table_name;
+
+    sqlite> SELECT Timestamp, title FROM shows;
+
+    # * means select everything in columns
+    sqlite> SELECT * FROM shows;
+
+
+# sqlite bult-in function
+
+    AVG
+    COUNT
+    DISTINCT
+        SELECT DISTINCT(title) FROM shows;
+    LOWER
+    MAX
+    MIN
+    UPPER
+        sqlite> SELECT DISTINCT(UPPER(title)) FROM shows;
+
+
+# sqlite clauses or syntax
+
+    WHERE
+        sqlite> SELECT title FROM shows WHERE title = "The Office";
+    LIKE
+        # % means - zero or more characters so "%Office%" will find and return "aaaaaOfficeaaaa" as a match for example
+        sqlite> SELECT title FROM shows WHERE title LIKE "%Office%";
+    ORDER BY
+        # sorts from A to Z
+        sqlite> SELECT DISTINCT(UPPER(title)) FROM shows ORDER BY UPPER(title);
+    LIMIT
+    GROUP BY

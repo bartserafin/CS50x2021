@@ -1,0 +1,22 @@
+
+
+    sqlite> SELECT title FROM shows WHERE genres = "Comedy";
+
+    SELECT title FROM shows WHERE genres LIKE "%Comedy%";
+
+    sqlite> SELECT genres FROM shows;
+
+    ## How to remove commas in a genre list, so we can use SQL to its full potentail
+    ## When using SQL you should go away from CSV type data, and move to relation-database
+
+    # Create your own table
+        CREATE TALBE table_name (column_name type, ...);
+
+        INSERT INTO table_name (column_name, ...) VALUES(value, ...);
+
+            INSERT INTO shows (Timestamp, title, genres) VALUES("now", "The Muppet Show", "Comedy, Musical");
+
+            SELECT * FROM shows WHERE title LIKE "%Muppet%";
+
+    # Update
+        UPDATE shows SET genres = "Comedy, Drama, Musical" WHERE title = "The Muppet Show";

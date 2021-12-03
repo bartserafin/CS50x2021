@@ -1,0 +1,20 @@
+sort1 uses: bubble sort
+
+How do you know?:
+This is slower than sort 2 algorithm and similar to sort3 for random5000.txt file. Since both the selection and bubble sorting algorithms
+have the same higher bound complexity, we need to compare the lower bound complexity with sorted50000.txt file.
+Sort1 has executed this faster than sort3, and since bubble sort lower bound is
+Ω(n) compared to Ω(n^2) for selecion sort, sort1 uses bubble sort.
+
+sort2 uses: merge sort
+
+How do you know?:
+This sorting algorithm has exectued random50000.txt the quickest amongst all three programs.
+The merge sort algorithm has the smallest complexity of O(n log n), and hence will be the quickest.
+
+sort3 uses: selection sort
+
+How do you know?:
+This is slower than sort 2 algorithm and as explained above for sort1, the selection sort lower bound is Ω(n^2), hence this will be the slowest
+for a sorted array.
+

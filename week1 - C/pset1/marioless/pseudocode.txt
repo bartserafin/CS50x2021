@@ -1,0 +1,15 @@
+ask user for height
+    if height is less than 0 or greater than 8, ask again
+loop for in range height so that:
+    it prints i hashes for i
+    until i == height
+
+    // for (int i =0; i < n; i++)
+    // {
+    //     for (int j=n-1; j >= i; j--)
+    //     {
+    //         printf(".");
+    //     }
+    //     printf("\n");
+    // }
+}

@@ -1,0 +1,9 @@
+# ask for change with get_float
+# check if given value if non-negative
+# assign avaialbe coins to give cash and counters for each of them
+#   quarters (25¢), dimes (10¢), nickels (5¢), and pennies (1¢)
+# loop while (change > cash):
+    # while change >= quaters:
+        # change = change // quaters
+        # count_quater ++
+    # cash += quater * count_quater

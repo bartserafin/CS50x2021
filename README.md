@@ -4,9 +4,6 @@ This is a collection of submitted work for CS50x 2021 - An Introduction to Compu
 
 ## Table of Contents
 
-### - [Week 0: Functions](https://cs50.harvard.edu/python/2022/psets/0/)
-* [Problem Set 0](/pset0)
-
 ### [Week 1: C](https://cs50.harvard.edu/x/2021/weeks/1/)
 ### [Week 2: Arrays](https://cs50.harvard.edu/x/2021/weeks/2/)
 ### [Week 3: Algorithms](https://cs50.harvard.edu/x/2021/weeks/3/)
@@ -20,56 +17,47 @@ This is a collection of submitted work for CS50x 2021 - An Introduction to Compu
 
 ### [Problem set 1](https://cs50.harvard.edu/x/2021/psets/1/)
 
-* [Mario less version](week1/pset1/mario/less/mario.c)
-* [Mario more version](week1/pset1/mario/more/mario.c)
-* [Cash](week1/pset1/cash/cash.c)
-* [Credit](week1/pset1/credit/credit.c)
+* [Mario less version](/week1 - C/pset1/mario/)
+* [Cash](/week1 - C/pset1/cash/)
 
 ### Problem set 2
 
-* [Readability](week2/pset2/readability/readability.c)
-* [Caesar](week2/pset2/caesar/caesar.c)
-* [Substitution](week2/pset2/substitution/substitution.c)
+* [Readability](/week2 - Arryas/pset2/readability/)
+* [Caesar](/week2 - Arryas/pset2/caesar/)
+* [Scrabble](/week2 - Arryas/pset2/scrabble/)
 
 
 ### Problem set 3
 
-* [Plurality](week3/pset3/plurality/plurality.c)
-* [Runoff](week3/pset3/runoff/runoff.c)
-* [Tideman](week3/pset3/tideman/tideman.c)
+* [Plurality](/week3 - Algorithms/pset3/plurality/)
+* [Runoff](/week3 - Algorithms/pset3/runoff/)
 
 
 ### Problem set 4
 
-* [Filter less version](week4/pset4/filter/less/helpers.c)
-* [Filter more version](week4/pset4/filter/more/helpers.c)
-* [Recover](week4/pset4/recover/recover.c)
+* [Filter](/week4 - Memory/pset4/filterless/filter/)
+* [Recover](/week4 - Memory/pset4/recover/)
 
 ### Problem set 5
 
-* [Speller](week5/pset5/speller/dictionary.c)
+* [Speller](/week5 - Data Structure/pset5/speller/)
 
 
 ### Problem set 6
 
-* [Hello - Python](week6/pset6/hello/hello.py)
-* [Mario less version - Python](week6/pset6/mario/less/mario.py)
-* [Mario more version - Python](week6/pset6/mario/more/mario.py)
-* [Cash - Python](week6/pset6/cash/cash.py)
-* [Credit - Python](week6/pset6/credit/credit.py)
-* [Readability - Python](week6/pset6/readability/readability.py)
-* [DNA](week6/pset6/dna/dna.py)
+* [Python revamp](/week6 - Python/pset6/)
+
 
 ### Problem set 7
 
-* [Movies](week7/pset7/movies)
-* [fiftyville](week7/pset7/fiftyville)
+* [Movies](/week7 - SQLite/pset7/movies/)
+* [fiftyville](/week7 - SQLite/pset7/fiftyville/)
 
 
 ### Problem set 8
 
-* [Homepage](week8/pset8/homepage)
+* [Homepage](/week8 - HTML, CSS, JavaScript/pset8/homepage/)
 
 ### Problem set 9
 
-* [Finance](week9/pset9/finance)
+* [Finance](/week9 - Flask/pset9/finance/)
